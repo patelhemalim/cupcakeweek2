@@ -71,7 +71,7 @@ public class Order {
             while (ordering) {
                 System.out.println("What would you like to order? Please use the number associated with each item to order.");
                 int orderChoice = input.nextInt();
-                input.nextInt();
+                input.nextLine() ;
                 if (orderChoice == 1) {
                     order.add(cupcakeMenu.get(0));
                     System.out.println("Item added to order");
